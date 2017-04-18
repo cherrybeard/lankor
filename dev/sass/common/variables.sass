@@ -1,0 +1,59 @@
+$font-size: 22px
+$font-size-tablet: 18px
+
+$width-smartphone: 720px
+$width-tablet: 980px
+
+@function rem($px)
+	@return ($px/$font-size)*1rem
+
+=placeholder()
+	&::-moz-placeholder
+		@content
+
+	&::-webkit-input-placeholder
+		@content
+
+	&:-ms-input-placeholder
+		@content
+
+=respond-to($media)
+	@if $media == smartphone
+		@media only screen and (max-width: $width-smartphone - 1)
+			@content
+
+	@if $media == tablet
+		@media only screen and (max-width: $width-tablet - 1)
+			@content
+
+	@else
+		@media only screen and (max-width: $media - 1)
+			@content
+
+=respond-only($media)
+	@if $media == not-smartphone
+		@media only screen and (min-width: $width-smartphone)
+			@content
+
+	@if $media == tablet
+		@media only screen and (min-width: $width-smartphone) and (max-width: $width-tablet - 1)
+			@content
+
+	@if $media == desktop
+		@media only screen and (min-width: $width-tablet)
+			@content
+
+
+=import-font($name, $weight, $style: normal)
+	$url: '../fonts/'+$name
+
+	$filename: $weight
+	@if $style == italic
+		$filename: $weight + 'i'
+
+	@font-face
+		font-family: $name
+		src: url('#{$url}/#{$filename}.eot')
+		src: url('#{$url}/#{$filename}.eot?#iefix') format('embedded-opentype'), url('#{$url}/#{$filename}.woff2') format('woff2'), url('#{$url}/#{$filename}.woff') format('woff'), url('#{$url}/#{$filename}.ttf') format('truetype')
+		font-weight: $weight
+		font-style: $style

@@ -1,0 +1,18 @@
+.advantages-warm
+	+respond-only(not-smartphone)
+		top: rem(565px)
+		right: rem(-20px)
+		width: rem(240px)
+
+	&::before
+		background-image: url(../img/advantages/warm.svg)
+
+		+respond-only(not-smartphone)
+			top: rem(-80px)
+			left: rem(70px)
+
+	h4
+		&::after
+			width: rem(120px)
+			left: rem(-9px)
+			transform: translateX(-100%)

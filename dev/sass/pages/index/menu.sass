@@ -1,0 +1,93 @@
+@import menu/button
+@import menu/hamburger
+@import menu/close
+
+%index-menu
+	position: fixed
+	left: 0
+	right: 0
+	top: 0
+	padding: 0 rem(12px)
+	display: flex
+	align-items: center
+	justify-content: space-between
+	z-index: 1000
+
+	+respond-to(smartphone)
+		width: 100%
+		padding: 0 8px
+
+	ul,
+	.menu-right
+		display: flex
+		justify-content: space-between
+
+	ul
+		width: 70%
+		max-width: rem(720px)
+
+	.menu-right
+		flex-shrink: 0
+		min-width: rem(300px)
+		margin-left: rem(40px)
+
+		+respond-to(smartphone)
+			margin-left: 0
+			display: none
+
+	li
+		display: inline-block
+
+		&:first-child
+			a
+				font-size: 0
+				display: block
+
+				span
+					display: block
+					height: rem(36px)
+					width: rem(90px)
+					font-size: 0
+					background: url(../img/logo.png) center center no-repeat
+						size: 100%
+
+		&:not(:first-child)
+			a
+				+respond-to(smartphone)
+					display: none
+
+		a
+			padding: 6px rem(16px)
+
+			&:hover,
+			&:focus
+				background-color: rgba($color-dark, 0.4)
+				color: #eee
+
+	a
+		font:
+			weight: $font-light
+			size: rem(14px)
+		transition: color 0.3s
+		display: inline-block
+		color: white
+		line-height: (36px/14px)
+		white-space: nowrap
+
+		.wf-active &
+			font-family: $font-primary
+
+		&[href^=tel]
+			letter-spacing: 0.12em
+
+	.menu-hamburger
+		@extend %index-menu-hamburger
+
+	.menu-close
+		@extend %index-menu-close
+
+	.menu-callback
+		@extend %index-menu-button
+
+	.menu-close
+		display: none

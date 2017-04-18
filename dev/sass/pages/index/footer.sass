@@ -1,0 +1,52 @@
+@import footer/dev
+
+%index-footer
+	padding-top: rem(65px)
+	padding-bottom: rem(55px)
+
+	a, p
+		color: #ebe6e3
+
+	.footer-contacts
+		display: flex
+		justify-content: space-between
+		width: 100%
+
+		+respond-to(smartphone)
+			flex-direction: column
+
+	.contacts
+		display: flex
+		flex-direction: column
+		align-items: flex-end
+
+		+respond-to(smartphone)
+			align-items: flex-start
+			margin-bottom: 16px
+			order: 0
+
+		a
+			font-size: rem(28px)
+			font-weight: bold
+			letter-spacing: 0.08em
+
+			+respond-to(smartphone)
+				font-size: 18px
+
+	p
+		font-size: rem(16px)
+
+		+respond-to(smartphone)
+			font-size: 12px
+
+	.logo
+		a
+			display: block
+			height: rem(36px)
+			width: rem(90px)
+			font-size: 0
+			background: url(../img/logo.png) center top no-repeat
+				size: 100%
+
+		+respond-to(smartphone)
+			order: 1

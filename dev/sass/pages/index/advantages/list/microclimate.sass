@@ -1,0 +1,18 @@
+.advantages-microclimate
+	+respond-only(not-smartphone)
+		top: rem(360px)
+		left: rem(25px)
+		width: rem(245px)
+
+	&::before
+		background-image: url(../img/advantages/microclimate.svg)
+
+		+respond-only(not-smartphone)
+			top: rem(-70px)
+			left: rem(56px)
+
+	h4
+		&::after
+			width: rem(220px)
+			right: rem(-9px)
+			transform: translateX(100%)

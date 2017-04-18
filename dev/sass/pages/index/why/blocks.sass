@@ -1,0 +1,50 @@
+%index-why-blocks
+	.why-first,
+	.why-third
+		position: relative
+
+		&::before
+			content: ""
+			position: absolute
+			background:
+				position: center
+				repeat: no-repeat
+				size: 100%
+			top: 0
+			opacity: 0.6
+
+			+respond-to(smartphone)
+				display: none
+
+	.why-first
+		&::before
+			background-image: url(../img/why/first.jpg)
+			height: rem(440px)
+			width: rem(320px)
+			right: 0
+
+		p
+			width: rem(530px)
+			margin-bottom: rem(55px)
+
+			+respond-to(smartphone)
+				width: auto
+
+	.why-second
+		p
+			margin-bottom: rem(135px)
+
+			+respond-to(smartphone)
+				margin-bottom: 60px
+
+	.why-third
+		padding-left: rem(395px)
+
+		+respond-to(smartphone)
+			padding-left: 0
+
+		&::before
+			background-image: url(../img/why/third.jpg)
+			height: rem(440px)
+			width: rem(320px)
+			left: 0

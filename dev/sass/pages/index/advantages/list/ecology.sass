@@ -1,0 +1,18 @@
+.advantages-ecology
+	+respond-only(not-smartphone)
+		top: rem(290px)
+		right: 0
+		width: rem(220px)
+
+	&::before
+		background-image: url(../img/advantages/ecology.svg)
+
+		+respond-only(not-smartphone)
+			left: rem(56px)
+			top: rem(-80px)
+
+	h4
+		&::after
+			width: rem(140px)
+			left: rem(-9px)
+			transform: translateX(-100%)

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="140px" height="140px" viewBox="0 0 140 140" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>advantages/warm</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="advantages/warm" stroke="#000000" stroke-width="2">
+            <g id="Group" transform="translate(41.000000, 10.000000)">
+                <path d="M36.4571429,74.7676164 L36.4571429,74.7375342 L36.4571429,12.1665753 C36.4571429,5.44654795 31.2636571,0 24.8571429,0 C18.4506286,0 13.2571429,5.44654795 13.2571429,12.1665753 L13.2571429,74.7375342 C13.2571429,74.7475616 13.2588,74.757589 13.2588,74.7676164 C5.37742857,78.9707671 0,87.3135616 0,96.9315068 C0,110.776 11.1293714,122 24.8571429,122 C38.5849143,122 49.7142857,110.776 49.7142857,96.9315068 C49.7142857,87.3135616 44.7428571,78.9707671 36.4571429,74.7676164 Z" id="Shape"></path>
+                <ellipse id="Oval" cx="24.8571429" cy="96.9315068" rx="16.5714286" ry="16.7123288"></ellipse>
+                <path d="M43.0857143,1.67123288 L43.0857143,71.8630137" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+                <path d="M46.4,3.34246575 L58,3.34246575" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+                <path d="M46.4,70.1917808 L58,70.1917808" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+                <path d="M46.4,20.0547945 L58,20.0547945" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+                <path d="M46.4,36.7671233 L58,36.7671233" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+                <path d="M46.4,53.4794521 L58,53.4794521" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+                <path d="M46.4,11.6986301 L53.0285714,11.6986301" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+                <path d="M46.4,61.8356164 L53.0285714,61.8356164" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+                <path d="M46.4,45.1232877 L53.0285714,45.1232877" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+                <path d="M46.4,28.4109589 L53.0285714,28.4109589" id="Shape" fill="#000000" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

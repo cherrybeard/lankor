@@ -1,0 +1,40 @@
+%index-more
+	padding: rem(100px) 25px rem(115px)
+	
+	+respond-to(smartphone)
+		padding: 65px 25px 80px
+
+	.more-services
+		display: flex
+
+		+respond-to(smartphone)
+			flex-direction: column
+
+	h4
+		margin-bottom: 50px
+		color: #ebe6e3
+
+		+respond-to(smartphone)
+			margin-bottom: 22px
+			font-size: 16px
+			line-height: (26px/16px)
+
+	p
+		color: #ebe6e3
+
+		+respond-to(smartphone)
+			font-size: 16px
+			line-height: (22px/16px)
+
+	.service, .free
+		width: 45%
+
+		+respond-to(smartphone)
+			width: auto
+
+	.service
+		margin-right: 90px
+
+		+respond-to(smartphone)
+			margin-right: 0
+			margin-bottom: 55px

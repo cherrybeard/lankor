@@ -1,0 +1,23 @@
+.popup-close
+	$size: rem(30px)
+
+	font-size: 0
+	width: $size
+	height: $size
+	background: none
+
+	&::before,
+	&::after
+		content: ''
+		position: absolute
+		top: 50%
+		left: 50%
+		height: rem(3px)
+		width: rem(36px)
+		background: #bab5b1
+
+	&::before
+		transform: translate(-50%, -50%) rotate(45deg)
+
+	&::after
+		transform: translate(-50%, -50%) rotate(-45deg)

@@ -1,0 +1,25 @@
+.advantages-repair
+	+respond-only(not-smartphone)
+		top: rem(970px)
+		left: rem(155px)
+		width: rem(265px)
+
+	p
+		width: rem(240px)
+
+		+respond-to(smartphone)
+			width: auto
+
+	&::before
+		background-image: url(../img/advantages/repair.svg)
+
+		+respond-only(not-smartphone)
+			top: rem(-80px)
+			left: rem(90px)
+
+	h4
+		&::after
+			width: rem(20px)
+			height: rem(250px)
+			right: rem(-9px)
+			transform: translate(100%, -100%)

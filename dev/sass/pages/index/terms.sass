@@ -1,0 +1,59 @@
+@import terms/infographic
+@import terms/elements
+
+%index-terms
+	padding-bottom: rem(115px)
+
+	h2
+		margin-top: rem(90px)
+
+	.infographic
+		margin-top: rem(80px)
+		margin-left: 50%
+		padding-bottom: rem(100px)
+
+		+respond-to(smartphone)
+			margin-left: 0
+
+		> div
+			display: flex
+			position: relative
+
+			&:not(:last-child)
+				margin-bottom: rem(90px)
+
+				+respond-to(smartphone)
+					margin-bottom: 160px
+
+			+respond-to(smartphone)
+				padding-top: 120px
+
+	strong
+		font-family:  $font-secondary
+		font-size: 50px
+		line-height: 50px
+		display: block
+
+	.days
+		span
+			font-size: 18px
+			display: block
+
+	p
+		width: 65%
+		margin-top: rem(22px)
+
+		+respond-to(smartphone)
+			width: auto
+			margin-top: 4px
+
+	@extend %index-terms-infographic
+	@extend %index-terms-elements
+
+	.terms-callback
+		@extend .button-primary
+		display: block
+		margin: auto
+
+		+respond-to(smartphone)
+			margin: 0

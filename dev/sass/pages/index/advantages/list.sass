@@ -1,0 +1,35 @@
+@import list/item
+@import list/microclimate
+@import list/ecology
+@import list/durability
+@import list/warm
+@import list/repair
+@import list/appearance
+
+.advantages-list
+	$h4-after-border: 1px solid #363636
+
+	h4
+		margin-bottom: rem(20px)
+		position: relative
+		display: inline-block
+
+		+respond-to(smartphone)
+			margin-bottom: 20px
+
+		&::after
+			content: ''
+			position: absolute
+			top: 50%
+			border-bottom: $h4-after-border
+
+			+respond-to(smartphone)
+				display: none
+
+	.advantages-appearance
+		h4::after
+			border-left: $h4-after-border
+
+	.advantages-repair
+		h4::after
+			border-right: $h4-after-border

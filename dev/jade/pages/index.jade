@@ -1,0 +1,21 @@
+extends ../layouts/app
+
+block variables
+	- title 					 = 'Ланкор: деревянные окна дышат'
+	- pageName 				 = 'index'
+	
+block content
+	include index/menu
+	include index/header
+	include index/description
+	include index/advantages
+	include index/why
+	include index/price
+	include index/more
+	include index/terms
+	include index/guarantees
+	include index/reviews
+	include index/footer
+			
+	.popup-overlay
+		include index/popup

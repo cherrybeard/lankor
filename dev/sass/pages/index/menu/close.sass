@@ -1,0 +1,31 @@
+%index-menu-close
+	position: absolute
+	right: 56px
+	top: 6px
+
+	+respond-to(smartphone)
+		display: block
+		top: auto
+		right: 22px
+
+	.menu-close-menu
+		font-size: 0
+		width: 40px
+		height: 40px
+		background: none
+
+		&::before,
+		&::after
+			content: ''
+			position: absolute
+			top: 50%
+			left: 50%
+			height: 3px
+			width: 24px
+			background: #ebe6e3
+
+		&::before
+			transform: translate(-50%, -50%) rotate(45deg)
+
+		&::after
+			transform: translate(-50%, -50%) rotate(-45deg)

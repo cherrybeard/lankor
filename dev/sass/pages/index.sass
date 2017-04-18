@@ -1,0 +1,87 @@
+@import index/menu
+@import index/header
+@import index/description
+@import index/advantages
+@import index/why
+@import index/price
+@import index/more
+@import index/terms
+@import index/guarantees
+@import index/reviews
+@import index/footer
+
+.page-index
+	.section-menu
+		@extend %index-menu
+
+	.section-header
+		background: url(../img/header/bg.jpg) center no-repeat
+			size: cover
+		height: 100vh
+
+		.section-content
+			display: flex
+			align-items: center
+			height: 100%
+
+			@extend %index-header
+
+	.section-description
+		@extend %index-description
+
+	.section-advantages
+		.section-content
+			position: relative
+			height: rem(1260px)
+
+			+respond-to(smartphone)
+				height: auto
+				padding-bottom: 70px
+
+	.section-why
+		background-color: $color-dark
+
+		@extend %index-why
+
+	.section-price
+		@extend %index-price
+
+	.section-more
+		background: url(../img/more/bg.jpg) center no-repeat
+			size: cover
+		position: relative
+
+		&::before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			background: rgba($color-dark, 0.4)
+
+		.section-content
+			z-index: 1
+			position: relative
+			@extend %index-more
+
+	.section-terms
+		@extend %index-terms
+
+	.section-guarantees
+		background: url(../img/guarantees/bg.jpg) center no-repeat
+			size: cover
+		padding-bottom: rem(175px)
+
+		+respond-to(smartphone)
+			padding-bottom: 80px
+
+		@extend %index-guarantees
+
+	.section-reviews
+		@extend %index-reviews
+
+	.section-footer
+		background-color: #292522
+
+		@extend %index-footer

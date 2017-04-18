@@ -1,0 +1,30 @@
+%index-header
+	header
+		width: 100%
+
+	h1
+		margin:
+			bottom: rem(30px)
+			top: rem(90px)
+		color: white
+
+		+respond-to(smartphone)
+			margin-bottom: rem(25px)
+
+	h3
+		color: white
+		margin-bottom: rem(88px)
+
+	.header-callback
+		display: none
+
+		+respond-to(smartphone)
+			display: block
+			background-color: #2948e6
+			color: #fff
+			font-size: 16px
+			letter-spacing: 0.1em
+			line-height: (48px/16px)
+			text-transform: uppercase
+			border-radius: 6px
+			width: 235px

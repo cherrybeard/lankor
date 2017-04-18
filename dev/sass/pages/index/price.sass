@@ -1,0 +1,50 @@
+@import price/image
+
+%index-price
+	padding: rem(115px) 0 rem(120px)
+
+	+respond-to(smartphone)
+		padding: 50px 0 80px
+
+	.price-list
+		margin: rem(80px) 0 rem(70px)
+		display: flex
+		justify-content: space-between
+
+		+respond-to(smartphone)
+			margin: 25px 0 15px
+			flex-direction: column
+
+	.price
+		width: 30%
+
+		+respond-to(smartphone)
+			width: auto
+			margin-bottom: 40px
+
+	h5
+		font-size: 16px
+		font-weight: bold
+		letter-spacing: 0.08rem
+		text-transform: uppercase
+		margin-right: 9px
+
+	p, h5
+		display: inline-block
+
+	h4
+		font-size: 42px
+		margin-top: rem(24px)
+		font-family: $font-secondary
+		letter-spacing: 0
+
+		+respond-to(smartphone)
+			margin-top: 15px
+
+	.price-callback
+		@extend .button-primary
+		display: block
+		margin: auto
+
+		+respond-to(smartphone)
+			margin: 0

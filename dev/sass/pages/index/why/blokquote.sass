@@ -1,0 +1,31 @@
+%index-why-blokquote
+	blockquote
+		font-family:  $font-secondary
+		width: rem(530px)
+		margin-bottom: rem(125px)
+		font-size: rem(24px)
+		line-height: (36px/24px)
+		font-style: italic
+
+		+respond-to(smartphone)
+			position: relative
+			width: auto
+			padding: 96px 25px 113px
+			font-size: 22px
+			line-height: (24px/18px)
+			background: url(../img/why/first.jpg) center no-repeat
+				size: 100%
+			margin: 0 -25px 40px
+
+			&:before
+				content: ''
+				position: absolute
+				top: 0
+				left: 0
+				right: 0
+				bottom: 0
+				background: rgba($color-dark, 0.4)
+
+			span
+				position: relative
+				z-index: 1

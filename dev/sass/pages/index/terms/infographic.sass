@@ -1,0 +1,41 @@
+%index-terms-infographic
+	.days
+		color: #363636
+		position: absolute
+		top: -12px
+		text-align: right
+		left: -220px
+	
+		+respond-to(smartphone)
+			left: 150px
+			top: 0
+
+	.before, .days-days
+		display: flex
+
+	.before
+		padding-left: 35px
+
+		span:not(:last-child)
+			margin-right: 55px
+		
+	.days-days
+		padding-left: 15px
+
+		span:not(:last-child)
+			margin-right: 35px
+
+	.fourth-step, .fifth-step
+		.days
+			top: -4px
+	
+		h4
+			+respond-to(smartphone)
+				padding-top: 15px
+
+	.fourth-step
+		.days
+			left: -312px
+	
+			+respond-to(smartphone)
+				left: 110px

@@ -1,0 +1,54 @@
+%index-reviews
+	padding-top: rem(110px)
+
+	+respond-to(smartphone)
+		padding-top: 65px
+
+	.reviews
+		margin-top: rem(85px)
+		columns: 3
+
+		+respond-to(smartphone)
+			columns: 1
+			margin-top: 40px
+
+	.review
+		margin-right: rem(35px)
+		margin-bottom: 60px
+		break-inside: avoid
+		position: relative
+
+		+respond-to(smartphone)
+			margin-bottom: 50px
+
+	.review-image
+		$size: rem(48px)
+		width: $size
+		height: $size
+		border-radius: 50%
+		background:
+			position: center
+			repeat: no-repeat
+			size: cover
+		position: absolute
+		top: 0
+		left: 0
+		opacity: 0.8
+
+	h4, h5
+		margin-left: 60px
+
+	h5
+		margin-bottom: 23px
+
+	p
+		font-size: 16px
+		line-height: (22px/16px)
+
+	.reviews-more
+		font-size: 16px
+		line-height: 26px
+		background: none
+		color: #5f5752
+		border-bottom: 1px solid #5f5752
+		transition: border 0.3s

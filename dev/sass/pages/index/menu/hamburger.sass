@@ -1,0 +1,38 @@
+%index-menu-hamburger
+	display: none
+	position: fixed
+	right: 56px
+	top: 6px
+
+	+respond-to(smartphone)
+		display: block
+		top: auto
+		right: 46px
+
+	.hamburger
+		$size: 40px
+
+		font-size: 0
+		position: absolute
+		width: $size
+		height: $size
+		background: transparent
+
+		span,
+		&::before,
+		&::after
+			content: ""
+			position: absolute
+			background: white
+			width: 20px
+			height: 3px
+			left: 10px
+
+		&::before
+			top: 10px
+
+		span
+			top: 18px
+
+		&::after
+			bottom: 11px

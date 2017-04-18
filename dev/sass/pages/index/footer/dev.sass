@@ -1,0 +1,33 @@
+.section-footer-dev
+	background: #222
+
+	.section-content
+		$padding: 1em
+
+		padding:
+			top: $padding
+			bottom: $padding
+
+	p
+		color: #aaa
+		font-size: 0.4rem
+		letter-spacing: 0.15em
+		text-transform: uppercase
+		display: flex
+		align-items: center
+		justify-content: flex-end
+
+	a
+		font-size: 0
+		display: block
+		width: rem(120px)
+		height: 0
+		padding-top: rem(17px)
+		margin-left: 0.5rem
+		background: url('../img/krlogo.svg') center no-repeat
+			size: 100%
+		opacity: 0.7
+		transition: opacity 0.3s
+
+		&:hover
+			opacity: 1

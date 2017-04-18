@@ -1,0 +1,19 @@
+.advantages-appearance
+	+respond-only(not-smartphone)
+		top: rem(900px)
+		right: rem(85px)
+		width: rem(240px)
+
+	&::before
+		background-image: url(../img/advantages/appearance.svg)
+
+		+respond-only(not-smartphone)
+			top: rem(-80px)
+			left: rem(60px)
+
+	h4
+		&::after
+			width: rem(40px)
+			height: rem(220px)
+			left: rem(-9px)
+			transform: translate(-100%, -100%)

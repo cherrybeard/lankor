@@ -1,0 +1,39 @@
+@import why/blocks
+@import why/blokquote
+
+%index-why
+	padding-bottom: rem(300px)
+
+	+respond-to(smartphone)
+		padding-bottom: 80px
+
+	h2
+		margin: rem(140px) 0 rem(98px)
+
+		+respond-to(smartphone)
+			margin: 63px 0 37px
+
+	h2, h4, p, blockquote
+		color: #ebe6e3
+
+	h4
+		margin-bottom: rem(27px)
+		width: rem(340px)
+		line-height: (26px/16px)
+
+		+respond-to(smartphone)
+			font-size: 14px
+			line-height: (24px/14px)
+			width: auto
+			margin-bottom: 18px
+
+	p
+		font-size: rem(22px)
+		line-height: (30px/22px)
+
+		+respond-to(smartphone)
+			font-size: 16px
+			line-height: (22px/16px)
+
+	@extend %index-why-blocks
+	@extend %index-why-blokquote

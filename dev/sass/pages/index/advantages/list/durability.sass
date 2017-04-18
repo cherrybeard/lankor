@@ -1,0 +1,18 @@
+.advantages-durability
+	+respond-only(not-smartphone)
+		top: rem(680px)
+		left: rem(25px)
+		width: rem(245px)
+
+	&::before
+		background-image: url(../img/advantages/durability.svg)
+
+		+respond-only(not-smartphone)
+			top: rem(-80px)
+			left: rem(58px)
+
+	h4
+		&::after
+			width: rem(120px)
+			right: rem(-9px)
+			transform: translateX(100%)

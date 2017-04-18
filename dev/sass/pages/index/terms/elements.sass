@@ -1,0 +1,73 @@
+%index-terms-elements
+	.infographic
+		> div:last-child
+			.text::after
+				display: none
+
+		.text
+			position: relative
+
+			+respond-to(smartphone)
+				width: 100%
+
+			&::before,
+			&::after
+				content: ""
+				position: absolute
+				left: -85px
+
+			&::before
+				$size: 100px
+
+				background: center no-repeat
+					size: 100%
+				transform: translateX(-50%)
+				height: $size
+				width: $size
+				top: -20px
+
+				+respond-to(smartphone)
+					left: 50px
+					top: -135px
+
+
+			&::after
+				width: 1px
+				height: rem(90px)
+				background: #363636
+				top: rem(100px)
+
+				+respond-to(smartphone)
+					left: 50%
+					bottom: -120px
+					top: auto
+
+
+		.first-step
+			.text
+				&::before
+					background-image: url(../img/terms/step01.svg)
+
+		.second-step
+			.text
+				&::before
+					background-image: url(../img/terms/step02.svg)
+
+		.third-step
+			.text
+				&::before
+					background-image: url(../img/terms/step03.svg)
+
+		.fourth-step
+			.text
+				&::before
+					top: -30px
+					background-image: url(../img/terms/step04.svg)
+
+					+respond-to(smartphone)
+						top: -130px
+
+		.fifth-step
+			.text
+				&::before
+					background-image: url(../img/terms/step05.svg)

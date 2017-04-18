@@ -1,0 +1,21 @@
+.text-input
+	font-weight: $font-light
+	padding:
+		bottom: rem(10px)
+		top: rem(14px)
+	border-bottom: 3px solid #bab5b1
+	transition: border 0.3s
+
+	&.error
+		border-bottom-color: #FF6868
+
+	input
+		font-size: rem(24px)
+		line-height: rem(28px)
+		width: 100%
+		cursor: text
+		background: inherit
+
+		+respond-to(smartphone)
+			font-size: 16px
+			line-height: 20px
